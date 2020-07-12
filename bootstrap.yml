@@ -1,17 +1,15 @@
-﻿spring:
-    profiles:
-        - dev
-        
-      
+spring:
+  profiles:
+    active:
+      - dev
+
 ---
 spring:
-    profiles: dev   #开发环境
-    application:
-        name: microservicecloud-config-lvhaoguang-dev
-    
+  application:
+    name: microservicecloud-lvhaoguang-dev
+  profiles: dev
 ---
 spring:
-    application:
-        name: microservicecloud-config-lvhaoguang-test
-        
-    #请以utf-8保存,否则git报错
+  application:
+    name: microservicecloud-lvhaoguang-test
+  profiles: test
